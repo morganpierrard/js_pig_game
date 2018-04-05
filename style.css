@@ -1,0 +1,82 @@
+:root{
+	--red: #ec4d49;	
+}
+
+body{
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.link:hover {
+	color: var(--red);
+	cursor: pointer;
+}
+
+#background {
+	display:flex;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#left_part, #right_part {
+	flex: 1;
+}
+
+#left_part {
+	background-color:#f7f7f7;
+}
+
+#right_part {
+	background-color:#ffffff;
+}
+
+#main {
+	position: absolute;
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#new_game, #players_names,  #players_scores, #scores_total {
+	text-align: center;
+	width: 100%;
+	margin: 50px 0;
+}
+
+#players_names {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.player_name {
+	font-size: 2em;
+}
+
+#players_scores {
+	display: flex;
+	justify-content: space-around;
+}
+
+.score_player {
+	font-size: 4.5em;
+	color: var(--red);
+	font-weight: thin;
+}
+
+#scores_total {
+	display: flex;
+	justify-content: space-around;
+}
+
+.total_score {
+	background-color: var(--red);
+	padding: 10px;
+}
+
+.total_score_digit {
+	color: #fff;
+}
