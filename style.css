@@ -40,7 +40,7 @@ body{
 	margin: auto;
 }
 
-#new_game, #players_names,  #players_scores, #scores_total {
+#new_game, #players_names,  #players_scores, #scores_current {
 	text-align: center;
 	width: 100%;
 	margin: 50px 0;
@@ -54,6 +54,8 @@ body{
 
 .player_name {
 	font-size: 2em;
+	display: flex;
+	align-items: center;
 }
 
 #players_scores {
@@ -67,16 +69,24 @@ body{
 	font-weight: thin;
 }
 
-#scores_total {
+#scores_current {
 	display: flex;
 	justify-content: space-around;
 }
 
-.total_score {
+.current {
 	background-color: var(--red);
 	padding: 10px;
 }
 
-.total_score_digit {
+.current_digit {
 	color: #fff;
+}
+
+.pastille {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--red);
+	margin-left: 10px;
 }
